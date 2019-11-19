@@ -1,5 +1,22 @@
 import numpy as np
-import random
+
+D = np.array([
+    [5,5],
+    [1,5],
+    [4,5],
+    [4.5,4],
+    [5,1],
+    [4.7,1]
+])
 
 
-aaa
+def agnes(n):
+    
+
+
+
+    pass
+
+
+
+print(agnes(3))
