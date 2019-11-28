@@ -18,6 +18,7 @@ class MyProblem(ea.Problem):              # 继承Problem父类
 
     def MyInit(self):
         self.car = np.array([[5,3],[10,10]])        # [[核载量],[车辆数值]]
+        self.car_kinds = 2                          # 火车的
         self.need = np.array(\
             [1,7,0.8,1.3,2.8,1.9,3.5,0.9,0.3,1.2])  # 各点需求量
         node_list = ['A','B','C','D','E',\
@@ -64,9 +65,11 @@ class MyProblem(ea.Problem):              # 继承Problem父类
 
     def aimFunc(self, pop):     # 目标函数，pop为传入种群对象
         Vars = pop.Phen         # 得到决策变量矩阵
-        V2 = Vars.copy()
+        NEED = np.zeros([pop.shape[0],self.need.size])     # 需求点派送顺序
+        CAR = Vars[:,[1-self.car_kinds:-1]]
         for v in Vars:
-
+            t = np.array(range(self.need.size))
+            
 
 
              
