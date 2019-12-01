@@ -160,7 +160,13 @@ class MyProblem(ea.Problem):              # 继承Problem父类
             K.append(k)
         ANS = []
         for i in range(len(S)):
-            ANS.append(S[i] + [-1] + K[i] + [-1] + pop.ObjV[i]) 
+            flage = True
+            for ans in ANS:         # 去重
+                if pop.ObjV[i][0] == ans[-3] and pop. ObjV[i][1] == ans[-2] and pop.ObjV[i][2] == ans[-1]:
+                    flage = False
+                    break
+            if flage:
+                ANS.append(S[i] + [-1] + K[i] + [-1] + list(pop.ObjV[i])) 
         self.mywrite('ANS.txt',ANS)
 
 
