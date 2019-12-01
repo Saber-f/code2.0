@@ -1,7 +1,6 @@
 import numpy as np
 import geatpy as ea
 import networkx as nx
-import matplotlib.pyplot as plt
 
 class MyProblem(ea.Problem):              # 继承Problem父类
     def getD(self,node_list,edge_list):
