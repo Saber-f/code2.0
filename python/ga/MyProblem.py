@@ -19,7 +19,7 @@ class MyProblem(ea.Problem):              # 继承Problem父类
         self.max_mileage = 35                       # 单次最大里程
         self.unload_time = 5                        # 卸货用时
         self.speed = 6                              # 货车平均行驶速度(min/km)
-        self.car = np.array([[5,2],[1,2]])          # [[核载量],[车辆数数目]]
+        self.car = np.array([[5,2,3],[1,2,2]])          # [[核载量],[车辆数数目]]
         self.car_kinds = self.car[0].size           # 货车的种类
         self.need = np.array(\
             [1.7,0.8,1.3,2.8,1.9,3.5,0.9,0.3,1.2])  # 各点需求量

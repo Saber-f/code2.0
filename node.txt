@@ -1,0 +1,4 @@
+建议编辑器 nano
+
+pip换源命令:
+pip config set global.index-url 地址

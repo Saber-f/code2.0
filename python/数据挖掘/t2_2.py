@@ -166,7 +166,7 @@ D2_ = fennei(D2.copy(),Z)
 print(Z)
 print(D2_)
 
-print('CART')
+print('CART::')
 Z = Spanning_tree(list(range(len(D))),list(range(len(D[0]))),len(D[0])-1,'CART')
 D2_ = fennei(D2.copy(),Z)
 print(Z)
