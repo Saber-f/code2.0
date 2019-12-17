@@ -2,3 +2,19 @@
 
 pip换源命令:
 pip config set global.index-url 地址
+
+glxgears  测试集显的FPS
+optirun glxgears  测试独显的FPS
+会发现独显的FPS明显有了变化
+
+
+TensorFlow的日志级别分为以下三种：
+TF_CPP_MIN_LOG_LEVEL = 1 //默认设置，为显示所有信息
+TF_CPP_MIN_LOG_LEVEL = 2 //只显示error和warining信息
+TF_CPP_MIN_LOG_LEVEL = 3 //只显示error信息 
+
+import os
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+
+图论，ga库
+geatpy,networkx
