@@ -177,6 +177,7 @@ problem = MyProblem()       # 实例化问题对象
 ## 种群设置
 Encoding = 'RI'             # 编码方式
 NIND = 100                  # 种群规模
+
 Field = ea.crtfld(Encoding, problem.varTypes, problem.ranges,
     problem.borders)        # 创建区域描述器
 # 实例化种群对象（此时种群还没有被真正初始化，仅仅是生成一个种群对象）
@@ -186,8 +187,8 @@ population = ea.Population(Encoding, Field, NIND)
 ## 算法参数设置
 # 实例化一个算法模板对象
 myAlgorithm = ea.moea_NSGA3_templet(problem, population)
-myAlgorithm.MAXGEN = 500       # 最大遗传代数
-myAlgorithm.drawing = 1
+myAlgorithm.MAXGEN = 500        # 最大遗传代数
+myAlgorithm.drawing = 0         # 设置绘图方式（0：不绘图；1：绘制结果图；2：绘制过程动画）
 
 ## 调用算法模板进行种群进化
 NDSet = myAlgorithm.run()       # 执行算法模板
