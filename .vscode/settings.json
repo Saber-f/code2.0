@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/home/dt/.conda/envs/tf/bin/python"
+    "python.pythonPath": "/home/dt/.conda/envs/tf/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
