@@ -18,3 +18,5 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 图论，ga库
 geatpy,networkx
+
+开源AI游戏库 gym
