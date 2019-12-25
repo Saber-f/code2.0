@@ -23,4 +23,14 @@ geatpy,networkx
 
 windows包管理工具scoop,choco
 powershell主题oh-my-posh
-1
+
+
+
+1、开题报告(2.15(学院))
+背景，方法
+
+论文结构
+背景
+方法
+结果
+结论(讨论)
