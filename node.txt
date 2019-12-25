@@ -22,3 +22,4 @@ geatpy,networkx
 开源AI游戏库 gym
 
 windows包管理工具scoop,choco
+powershell主题oh-my-posh
