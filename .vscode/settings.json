@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/dt/.conda/envs/tf/bin/python",
+    "python.pythonPath": "C:\\Users\\Administrator\\Anaconda3\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
 }
