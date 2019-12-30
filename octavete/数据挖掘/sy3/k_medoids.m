@@ -20,11 +20,12 @@ while true
     for i = 1:size(D,1)
         d = D(i,Z);
         [~,s] = min(d);
-        C{s} = [C{s},];
+        C{s} = [C{s},i];
     end
 
     for i = 1:N
-        Z_(i) = 
+        t = D(C{i},:);
+        [~,Z_(i)] = min(sum(t));
     end
     if all(all(Z==Z_))
         break;
