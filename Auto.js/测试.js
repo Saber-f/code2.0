@@ -1,18 +1,18 @@
-/*
 requestScreenCapture(true)                                  //请求横屏截图
-color = images.pixel(captureScreen(), 1750, 999)            //获取颜色
+color = images.pixel(captureScreen(), 62, 486)            //获取颜色
 num = colors.parseColor(colors.toString(color))             //显示该颜色整数值
 log(num)
-*/
 
 
 
-threads.start(function(){
-    //在新线程执行的代码
-    while(true){
-        log("子线程");
-    }
-});
-while(true){
-    log("脚本主线程");
+
+
+function click2(x,y,t){
+    click(x,y)
+    sleep(t*1000)
+}
+
+function swipe2(x1,y1,x2,y2,t1,t2){
+    swipe(x1,y1,x2,y2,t1)
+    sleep(t2*1000)
 }
