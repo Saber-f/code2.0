@@ -1,9 +1,11 @@
 requestScreenCapture(true)                                  //请求横屏截图
-color = images.pixel(captureScreen(), 62, 486)            //获取颜色
+color = images.pixel(captureScreen(),1411, 688)              //获取颜色
 num = colors.parseColor(colors.toString(color))             //显示该颜色整数值
 log(num)
 
 
+
+swipe2(2000,600,1964,416,500,1.0)        // 瞄准上路
 
 
 
