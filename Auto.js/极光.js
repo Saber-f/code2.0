@@ -1,5 +1,5 @@
 var n = 10
-var t = 30000
+var t = 25000
 home()
 sleep(1000)
 home()
@@ -37,13 +37,13 @@ sleep(500)
 click(397,853)              //打开微信分身
 sleep(4000)
 click(370,2164)
-sleep(500)
+sleep(1000)
 click(402,742)
-sleep(500)
+sleep(1000)
 click(318,378)              //打开极光公众号
-sleep(500)
+sleep(1000)
 click(545,2142)              //开始学习
-sleep(500)
+sleep(1000)
 click(454,2026)              //开始学习
 sleep(2000)
 click(449,1043)             //开始学习
