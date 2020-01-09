@@ -1,5 +1,5 @@
 requestScreenCapture(true)   
-var s = 6                                         // 初始状态(点击收藏作品之后)
+var s = 2                                         // 初始状态(点击收藏作品之后)
 while(1){
     log(s);
     switch(s){
@@ -126,7 +126,7 @@ function brush(){
     click2(790,128,0.5);                        // 关闭商店
 
     while(1){
-        if(isc(1658, 1000, -9418177))
+        if(isc(1658, 1000, -9418177))           // 出现返回房间选项
             return;
         if(isc(1671, 556, -2502716)){           // 开无尽
             click2(1671, 556, 0);
