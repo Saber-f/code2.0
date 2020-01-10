@@ -49,12 +49,17 @@ while(1){
                         if(isc(1900, 455, -1319215))
                             break;
                     }
+                }
+                if (s == 7)
+                    break
+                if (isc(1275, 75, -15331575)){       // 离队
+                    click2(1275, 75, 0.5)
+                    s = 2;
                     break;
                 }
-                if (isc(1075, 75, -1590922)){       // 回到房间
-                    click2(1075, 75, 0.5)
-                    s = 6;
-                    break;   
+                if (isc(1100, 500, -6796963)){      // 返回房间失败
+                    s = 0;   
+                    break;
                 }
             }
             break;
@@ -125,6 +130,7 @@ function brush(){
         click2(1158,982,1.5);                   // 购买
     click2(790,128,0.5);                        // 关闭商店
 
+    log(81)
     while(1){
         if(isc(1658, 1000, -9418177))           // 出现返回房间选项
             return;
@@ -134,6 +140,8 @@ function brush(){
         }
     }
     var k = 0;
+
+    log(82)
     while(true){
         if(isc(864, 384, -4377567))             // 如果胜利
             break;

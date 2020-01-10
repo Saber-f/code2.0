@@ -1,6 +1,6 @@
-f(1808, 1020)
+f(920, 1000)
 function f(x, y){
-    requestScreenCapture(true)                                  //请求横屏截图
+    requestScreenCapture()                                      //请求横屏截图
     color = images.pixel(captureScreen(), x, y)                 //获取颜色
     num = colors.parseColor(colors.toString(color))             //显示该颜色整数值
     log('click3(%d, %d, %d, 0.5)',x,y,color)

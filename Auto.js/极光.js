@@ -1,72 +1,56 @@
-var n = 10
-var t = 25000
-home()
-sleep(1000)
-home()
-sleep(1000)
-click(903,1435)         //打开激光单词
-sleep(4000)
-click(701,999)      //开始学习
-sleep(1000)
-click(529,1297)         //继续
-sleep(500)
-var i = 0
-while(i < n){
-    click(540,1661)
-    sleep(t)
-    click(289,2175)
-    sleep(t)
-    i=i+1
+var n = 10;
+var t = 25;
+
+requestScreenCapture();             // 申请截图权限
+
+
+if(0){
+    // 返回第一个桌面
+    for (var i=0; i<3; i++){
+        home();
+        sleep(500);
+    }
+    click2(920, 1377,6);           // 打开极光单词
+    click2(920, 1000, 1)            // 继续学习
+    click2(800, 1250, 1);           // 继续学习
+    for (var i = 0; i<n; i++){
+        sleep(1000)
+        click2(550,1650, t);        // 不确定
+        click2(310, 2160, t);       // 知道了
+    }
 }
-back()
-sleep(300)
-back()
-sleep(300)
-back()
 
-//2222222
-
-home()
-sleep(500)
-home()
-sleep(500)
-swipe(600,1000,300,1000,300)
-sleep(300)
-swipe(600,1000,300,1000,300)
-sleep(500)
-click(397,853)              //打开微信分身
-sleep(4000)
-click(370,2164)
-sleep(1000)
-click(402,742)
-sleep(1000)
-click(318,378)              //打开极光公众号
-sleep(1000)
-click(545,2142)              //开始学习
-sleep(1000)
-click(454,2026)              //开始学习
-sleep(2000)
-click(449,1043)             //开始学习
-sleep(1000)
-click(511,1328)             //继续
-var i = 0
-while(i < n){
-    click(515,1661)
-    sleep(t)
-    click(289,2175)
-    sleep(t)
-    i=i+1
+if(1){
+    // 返回第一个桌面
+    for (var i=0; i<3; i++){
+        home();
+        sleep(500);
+    }
+    swipe2(700,1120,200,1120,400,0.5);      // 右滑
+    swipe2(700,1120,200,1120,400,1.0);      // 右滑
+    click2(410, 850,6);                     // 打开微信分生
+    click2(400, 2150, 1);                   // 打开通讯录
+    click2(95, 740, 1);                     // 公众号
+    click2(110, 360, 1);                    // 极光单词
+    click2(610, 2157, 1);                   // 开始学习
+    click2(640, 2015, 3);                   // 开始学习
+    click2(777, 1020, 1);                   // 继续学习
+    click2(560, 1270, 3);                   // 继续学习
+    for (var i = 0; i<n; i++){
+        sleep(1000)
+        click2(550,1650, t);                // 不确定
+        click2(310, 2160, t);               // 知道了
+    }   
+    home();         
 }
-back()
-sleep(300)
-back()
-sleep(300)
-back()
-sleep(300)
-back()
-sleep(300)
-back()
-sleep(300)
-home()
+
+function click2(x,y,t){
+    click(x,y);
+    sleep(t*1000);
+}
 
 
+function swipe2(x1,y1,x2,y2,t1,t2){
+    swipe(x1,y1,x2,y2,t1);
+    sleep(t2*1000);
+}
