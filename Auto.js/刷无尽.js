@@ -1,4 +1,4 @@
 while(true){
-    press(1574,600,5)
-    sleep(5)
+    press(1574,600,30)
+    sleep(50)
 }
